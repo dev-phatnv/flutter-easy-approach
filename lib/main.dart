@@ -6,24 +6,37 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Material App',
-      home: Scaffold(
+      home: CounterWidget()
+    );
+  }
+}
+
+class CounterWidget extends StatefulWidget {
+  @override
+  State<StatefulWidget> createState() {
+    return CounterWidgetState();
+  }
+}
+
+class CounterWidgetState extends State<CounterWidget> {
+  var counter = 0;
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
         appBar: AppBar(
-          title: Text('Material App Bar'),
+          title: Text('Learn Flutter'),
         ),
         body: Center(
-          child: RaisedButton.icon(
-            icon: Icon(Icons.payment, color: Colors.white,),
-            label: Text('Make payment', style: TextStyle(color: Colors.white),),
-            color: Colors.blue,
-            onPressed: () {},
-          ),
+          child: Text('Counter value is $counter', style: TextStyle(fontSize: 30),),
         ),
         floatingActionButton: FloatingActionButton(
-          onPressed: () {  },
+          onPressed: () {  
+            setState(() {
+              counter++;
+            });
+          },
           child: Icon(Icons.add)
         )
-      ),
-    );
+      );
   }
 }
