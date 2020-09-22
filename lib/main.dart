@@ -12,8 +12,11 @@ class MyApp extends StatelessWidget {
           title: Text('Material App Bar'),
         ),
         body: Center(
-          child: Container(
-            child: Text('Hello World'),
+          child: RaisedButton.icon(
+            icon: Icon(Icons.payment, color: Colors.white,),
+            label: Text('Make payment', style: TextStyle(color: Colors.white),),
+            color: Colors.blue,
+            onPressed: () {},
           ),
         ),
         floatingActionButton: FloatingActionButton(
