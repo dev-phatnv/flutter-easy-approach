@@ -1,16 +1,16 @@
-# fluttereasyapproach
+# flutter-easy-approach
+- Flutter is an SDK from google to make cross platform application that can run on iOS, Android, and Web too with a single code base.
+- Flutter is efficient and hell easy to use.
+- Flutter has one language that is Dart and it's also easy to use.
 
-A new Flutter application.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Prerequisite for flutter development
+- Tool for development (Android studio)
+- Support of Dart and Flutter for Android Studio
+- Flutter SDK
+- Emulator
+## How to create a new project in Flutter ?
+- flutter create my_project_name
+- flutter create -i swift -a kotlin your_project_name
+- flutter create --org com.yourcompany -i swift -a kotlin --description "Your Application Description" your_app_name
+## Command useful
+- mateapp
