@@ -61,3 +61,4 @@ Tue Sep 22 2020 [14:21:18 GMT+0700 (Indochina Time)] Log file started
 [5:38:30 PM] [FlutterDaemon] [Info] <== [{"id":"10","result":{"platforms":["ios","android"]}}]
 [5:38:30 PM] [General] [Warn] Did not find session 068732e0-c0f5-4118-afa4-a924d1a160bb to handle dart.progressStart. There were 0 sessions:
 [5:38:30 PM] [General] [Warn] Event will be queued and processed when the session start event fires
+[6:30:10 PM] [General] [Error] Error during `edit.format`: source contains syntax errors.
