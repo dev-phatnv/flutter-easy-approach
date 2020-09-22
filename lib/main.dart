@@ -11,13 +11,40 @@ class MyApp extends StatelessWidget {
         appBar: AppBar(
           title: Text('Material App Bar'),
         ),
-        body: Center(
-          child: RaisedButton.icon(
-            icon: Icon(Icons.payment, color: Colors.white,),
-            label: Text('Make payment', style: TextStyle(color: Colors.white),),
-            color: Colors.blue,
-            onPressed: () {},
-          ),
+        // body: Center(child: Row(
+        //   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        //   children: <Widget> [
+        //     FlatButton(child: Text(
+        //       'Hello button', 
+        //       style: TextStyle(color: Colors.white),), 
+        //       color: Colors.greenAccent,
+        //       onPressed: () {},
+        //     ),
+        //     Text('Hello 1'),
+        //     Text('Hello 2'),
+        //   ]
+        // ),),
+        body: Column(
+          children: <Widget>[
+            Container(
+              width: double.infinity,
+              height: 200,
+              margin: EdgeInsets.all(16),
+              color: Colors.red,
+              child: Center(
+                child: Text('My First Container', style: TextStyle(color: Colors.white),),
+              )
+            ),
+            Container(
+              width: double.infinity,
+              height: 200,
+              margin: EdgeInsets.all(16),
+              color: Colors.greenAccent,
+              child: Center(
+                child: Text('My First Container', style: TextStyle(color: Colors.white),),
+              )
+            ),
+          ]
         ),
         floatingActionButton: FloatingActionButton(
           onPressed: () {  },
