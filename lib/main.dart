@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
- 
+import 'package:fluttereasyapproach/screens/FirstScreen.dart';
+import 'package:fluttereasyapproach/screens/SecondScreen.dart';
+import 'package:fluttereasyapproach/screens/ThirdScreen.dart';
+
 void main() => runApp(MyApp());
  
 class MyApp extends StatelessWidget {
@@ -7,23 +10,27 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Material App',
-      home: Scaffold(
+      home: DefaultTabController(
+        child: Scaffold(
         appBar: AppBar(
           title: Text('Material App Bar'),
-        ),
-        body: Center(
-          child: RaisedButton.icon(
-            icon: Icon(Icons.payment, color: Colors.white,),
-            label: Text('Make payment', style: TextStyle(color: Colors.white),),
-            color: Colors.blue,
-            onPressed: () {},
+          bottom: TabBar(
+            tabs: <Widget>[
+              Tab(text: 'First',),
+              Tab(text: 'Scond',),
+              Tab(text: 'Third',)
+            ],
           ),
         ),
-        floatingActionButton: FloatingActionButton(
-          onPressed: () {  },
-          child: Icon(Icons.add)
-        )
+        body: TabBarView(children: <Widget> [
+          FirstScreen(),
+          SecondScreen(),
+          ThirdScreen(),
+        ]),
       ),
+      length: 3,
+      initialIndex: 0,
+      )
     );
   }
 }
