@@ -1,6 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:fluttereasyapproach/models/ArticleModel.dart';
 
-class SecondScreen extends StatelessWidget {
+class DetailArticles extends StatelessWidget {
+  ArticleModel selectedArticle;
+  DetailArticles(ArticleModel articleModel) {
+    selectedArticle = articleModel;
+  }
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -9,8 +14,14 @@ class SecondScreen extends StatelessWidget {
         appBar: AppBar(
           title: Text('Second screen', style: TextStyle(color: Colors.black))
         ),
-        body: Center(
-          child: Text('Second screen'),
+        body: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: <Widget>[
+            Text(selectedArticle.title),
+            Divider(),
+            Text(selectedArticle.detail),
+          ],
         )
       ),
     );
