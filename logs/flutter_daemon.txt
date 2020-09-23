@@ -20,14 +20,25 @@ Flutter SDK:
 HTTP_PROXY: undefined
 NO_PROXY: undefined
 
-Wed Sep 23 2020 [09:06:15 GMT+0700 (Indochina Time)] Log file started
-[9:06:15 AM] [FlutterDaemon] [Info] Spawning /Users/admin/flutter/bin/flutter with args ["daemon"]
-[9:06:15 AM] [FlutterDaemon] [Info] ..  in /Users/admin/flutter
-[9:06:15 AM] [FlutterDaemon] [Info] ..  with {"toolEnv":{"FLUTTER_HOST":"VSCode","PUB_ENVIRONMENT":"vscode.dart-code"}}
-[9:06:15 AM] [FlutterDaemon] [Info]     PID: 1731
-[9:06:15 AM] [FlutterDaemon] [Info] ==> [{"id":"1","method":"emulator.getEmulators"}]
-[9:06:18 AM] [FlutterDaemon] [Info] <== Starting device daemon...
-[9:06:18 AM] [FlutterDaemon] [Info] <== [{"event":"daemon.connected","params":{"version":"0.5.3","pid":1767}}]
-[9:06:18 AM] [FlutterDaemon] [Info] ==> [{"id":"2","method":"device.enable"}]
-[9:06:18 AM] [FlutterDaemon] [Info] <== [{"id":"2"}]
-[9:06:18 AM] [FlutterDaemon] [Info] <== [{"id":"1","result":[{"id":"Pixel_2_API_27","name":"Pixel 2 API 27","category":"mobile","platformType":"android"},{"id":"Pixel_2_API_29","name":"Pixel 2 API 29","category":"mobile","platformType":"android"},{"id":"apple_ios_simulator","name":"iOS Simulator","category":"mobile","platformType":"ios"}]}]
+Wed Sep 23 2020 [09:39:10 GMT+0700 (Indochina Time)] Log file started
+[9:39:10 AM] [FlutterDaemon] [Info] Spawning /Users/admin/flutter/bin/flutter with args ["daemon"]
+[9:39:10 AM] [FlutterDaemon] [Info] ..  in /Users/admin/flutter
+[9:39:10 AM] [FlutterDaemon] [Info] ..  with {"toolEnv":{"FLUTTER_HOST":"VSCode","PUB_ENVIRONMENT":"vscode.dart-code"}}
+[9:39:10 AM] [FlutterDaemon] [Info]     PID: 3391
+[9:39:10 AM] [FlutterDaemon] [Info] ==> [{"id":"1","method":"emulator.getEmulators"}]
+[9:39:13 AM] [FlutterDaemon] [Info] <== Starting device daemon...
+[9:39:13 AM] [FlutterDaemon] [Info] <== [{"event":"daemon.connected","params":{"version":"0.5.3","pid":3429}}]
+[9:39:13 AM] [FlutterDaemon] [Info] ==> [{"id":"2","method":"device.enable"}]
+[9:39:13 AM] [FlutterDaemon] [Info] <== [{"id":"2"}]
+[9:39:13 AM] [FlutterDaemon] [Info] <== [{"id":"1","result":[{"id":"Pixel_2_API_27","name":"Pixel 2 API 27","category":"mobile","platformType":"android"},{"id":"Pixel_2_API_29","name":"Pixel 2 API 29","category":"mobile","platformType":"android"},{"id":"apple_ios_simulator","name":"iOS Simulator","category":"mobile","platformType":"ios"}]}]
+[9:39:18 AM] [FlutterDaemon] [Info] <== [{"event":"device.added","params":{"id":"emulator-5554","name":"Android SDK built for x86","platform":"android-x86","emulator":true,"category":"mobile","platformType":"android","ephemeral":true,"emulatorId":"Pixel_2_API_29"}}]
+[9:39:18 AM] [FlutterDaemon] [Info] ==> [{"id":"3","method":"daemon.getSupportedPlatforms","params":{"projectRoot":"/Users/admin/Projects/FlutterCourse/flutter_easy_approach"}}]
+[9:39:18 AM] [FlutterDaemon] [Info] <== [{"id":"3","result":{"platforms":["ios","android"]}}]
+[9:39:21 AM] [FlutterDaemon] [Info] ==> [{"id":"4","method":"daemon.getSupportedPlatforms","params":{"projectRoot":"/Users/admin/Projects/FlutterCourse/flutter_easy_approach"}}]
+[9:39:21 AM] [FlutterDaemon] [Info] <== [{"id":"4","result":{"platforms":["ios","android"]}}]
+[9:39:21 AM] [General] [Warn] Did not find session ea87b70c-6297-4481-bd7d-82cb622e119f to handle dart.progressStart. There were 0 sessions:
+[9:39:21 AM] [General] [Warn] Event will be queued and processed when the session start event fires
+[10:32:22 AM] [FlutterDaemon] [Info] ==> [{"id":"5","method":"daemon.getSupportedPlatforms","params":{"projectRoot":"/Users/admin/Projects/FlutterCourse/flutter_easy_approach"}}]
+[10:32:22 AM] [FlutterDaemon] [Info] <== [{"id":"5","result":{"platforms":["ios","android"]}}]
+[10:32:22 AM] [General] [Warn] Did not find session 9fe476bb-0e30-477b-8f3c-6ac0cdde880b to handle dart.progressStart. There were 0 sessions:
+[10:32:22 AM] [General] [Warn] Event will be queued and processed when the session start event fires

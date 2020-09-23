@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 
-class SecondScreen extends StatelessWidget {
+class ThirdScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
       width: double.infinity,
       height: double.infinity,
-      color: Colors.blue,
+      color: Colors.yellowAccent,
       child: Container(
-        child: Text('This is 2'),
+        child: Text('This is 3'),
       ),
     );
   }

@@ -1,20 +1,36 @@
 import 'package:flutter/material.dart';
-import 'package:fluttereasyapproach/models/ArticleModel.dart';
 import 'package:fluttereasyapproach/screens/FirstScreen.dart';
- 
+import 'package:fluttereasyapproach/screens/SecondScreen.dart';
+import 'package:fluttereasyapproach/screens/ThirdScreen.dart';
+
 void main() => runApp(MyApp());
  
 class MyApp extends StatelessWidget {
-  List<ArticleModel> articles = [
-    ArticleModel("Lorem ipsum 1", "Nisi tata 1"),
-    ArticleModel("Lorem ipsum 2", "Nisi tata 2"),
-    ArticleModel("Lorem ipsum 3", "Nisi tata 3"),
-    ArticleModel("Lorem ipsum 4", "Nisi tata 4"),
-  ];
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: ListOfArticles(articles)
+      title: 'Material App',
+      home: DefaultTabController(
+        child: Scaffold(
+        appBar: AppBar(
+          title: Text('Material App Bar'),
+          bottom: TabBar(
+            tabs: <Widget>[
+              Tab(text: 'First',),
+              Tab(text: 'Scond',),
+              Tab(text: 'Third',)
+            ],
+          ),
+        ),
+        body: TabBarView(children: <Widget> [
+          FirstScreen(),
+          SecondScreen(),
+          ThirdScreen(),
+        ]),
+      ),
+      length: 3,
+      initialIndex: 0,
+      )
     );
   }
 }
